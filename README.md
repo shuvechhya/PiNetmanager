@@ -34,7 +34,7 @@ This repository contains two programs:
 
 ```
 .
-├── agent.py
+├── pi_client.py
 ├── controller_server.py
 ├── README.md
 └── pncp_log.txt   # auto-created
@@ -78,7 +78,7 @@ This starts:
 # ▶ Running an Agent
 
 ```bash
-python3 agent.py
+python3 pi_client.py
 ```
 
 The agent will:
@@ -239,6 +239,3 @@ Then load them in Python.
 
 ---
 
-# 📄 License
-
-MIT (or any you choose)
