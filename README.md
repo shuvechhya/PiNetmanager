@@ -37,6 +37,7 @@ This repository contains two programs:
 ├── pi_client.py
 ├── controller_server.py
 ├── README.md
+├── images/
 └── pncp_log.txt   # auto-created
 ```
 
@@ -73,6 +74,8 @@ This starts:
 * Logging system
 * Agent handler threads
 
+**Agent metrics:** <img src="images/Screenshot 2025-11-02 104453.png" width="700">
+
 ---
 
 # ▶ Running an Agent
@@ -87,6 +90,8 @@ The agent will:
 2. Authenticate via HMAC (timestamp-based)
 3. Wait for commands
 4. Periodically return metrics
+
+**Agent Example Output:** <img src="images/Screenshot 2025-11-02 104542.png" width="700">
 
 ---
 
@@ -164,6 +169,8 @@ ORDER BY time DESC
 LIMIT 50
 ```
 
+**Grafana Example Panel:** <img src="images/Screenshot 2025-11-02 104706.png" width="700">
+
 #### **CPU usage (parsed manually or via JSON plugin)**
 
 (You can parse JSON inside Grafana using **Grafana JSON data transformation**.)
@@ -236,6 +243,3 @@ export PNCP_INFLUX_HOST="localhost"
 ```
 
 Then load them in Python.
-
----
-
